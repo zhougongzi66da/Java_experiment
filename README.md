@@ -10,7 +10,7 @@
 
 	请你编写一个java程序输出自己的姓名、年龄、身高和体重，分别通过控制台和Eclipse环境运行。
 
-***题解：*** [](https://github.com/zhougongzi66da/Java_experiment/tree/master/src/Experiment_1/problem_1)
+***题解：*** [Java_experiment/src/Experiment_1/problem_1 at master · zhougongzi66da/Java_experiment (github.com)](https://github.com/zhougongzi66da/Java_experiment/tree/master/src/Experiment_1/problem_1)
 
 ---
 
