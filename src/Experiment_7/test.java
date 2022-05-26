@@ -2,7 +2,10 @@ package Experiment_7;
 
 public class test {
     public static void main(String[] args) {
-
+        String s="adcbeb";
+        String p="a*b?b";
+        boolean res=isMatch(s,p);
+        System.out.println(res);//true代表匹配成功 false代表匹配失败
     }
 
     public static boolean isMatch(String s, String p) {
