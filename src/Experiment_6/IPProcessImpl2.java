@@ -23,7 +23,7 @@ public class IPProcessImpl2 implements IPProcess {
                 temp[i] = (byte) Integer.parseInt(split[i]);
             }
 
-            //遍历bytes,四位一组做比较
+            //遍历memory,四位一组做比较
             boolean repeat = false;
             for (int i = 0; i < 4 * sum; i += 4) {
                 int index = i;
@@ -48,8 +48,7 @@ public class IPProcessImpl2 implements IPProcess {
             }
         }
 
-
-        //将充当内存的byte数组内的信息写入文件
+        //将充当内存的数组memory内的信息写入文件
         for (int i = 0; i < sum * 4; i += 4) {
             byte[] temp = {memory[i], memory[i + 1], memory[i + 2], memory[i + 3]};
             //InetAddress.getByAddress 可以将四位的byte数组转化为字符串
