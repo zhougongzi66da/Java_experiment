@@ -25,7 +25,7 @@ public class test {
 
     //生成 sum 个ipv4地址并写入文件,建议个数不要设的太大
     public static void creatTxt(long sum) throws IOException {
-        //生成100亿条ipv4地址，文件生成位置可以自行设置
+        //生成sum条ipv4地址，文件生成位置可以自行设置
         BufferedWriter bw = new BufferedWriter(new FileWriter(pathIn));
         StringBuilder sb;
         Random ran = new Random();
