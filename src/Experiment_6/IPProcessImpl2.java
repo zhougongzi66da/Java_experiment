@@ -61,6 +61,6 @@ public class IPProcessImpl2 implements IPProcess {
         br.close();
         bw.close();
         long end = System.currentTimeMillis();
-        System.out.println("方式二处理数据数据耗费了:" + (end - start) / 1000 + "秒");
+        System.out.println("方式二处理数据数据耗费了:" + (end - start) + "毫秒");
     }
 }

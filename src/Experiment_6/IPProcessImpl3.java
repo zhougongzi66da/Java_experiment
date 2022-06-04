@@ -33,6 +33,6 @@ public class IPProcessImpl3 implements IPProcess {
         readIn.close();
         outPut.close();
         long end = System.currentTimeMillis();
-        System.out.println("方式三处理数据数据耗费了:" + (end - start) / 1000 + "秒");
+        System.out.println("方式三处理数据数据耗费了:" + (end - start) + "毫秒");
     }
 }

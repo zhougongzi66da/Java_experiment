@@ -1,8 +1,6 @@
 package Experiment_6;
 
 import java.io.*;
-import java.net.InetAddress;
-import java.text.DecimalFormat;
 import java.util.Random;
 
 public class test {
@@ -29,7 +27,6 @@ public class test {
         BufferedWriter bw = new BufferedWriter(new FileWriter(pathIn));
         StringBuilder sb;
         Random ran = new Random();
-        DecimalFormat df = new DecimalFormat("#0.00");
         long start = System.currentTimeMillis();
         for (long i = 1L; i <= sum; i++) {
             sb = new StringBuilder();
@@ -43,12 +40,10 @@ public class test {
             sb.append(a);
             bw.write(sb.toString());
             double d = 1.0 * i / sum;
-            String format = df.format(d * 100);
-            System.out.println("生成了：" + i + "条，" + "进度" + format + "%");
             bw.newLine();
         }
         bw.close();
         long end = System.currentTimeMillis();
-        System.out.println("生成数据一共耗费了:" + (end - start) / 1000 + "秒");
+        System.out.println("生成1000条数据一共耗费了:" + (end - start) + "毫秒");
     }
 }
