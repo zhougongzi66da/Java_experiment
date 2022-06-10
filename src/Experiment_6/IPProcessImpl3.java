@@ -17,7 +17,7 @@ public class IPProcessImpl3 implements IPProcess {
         while ((s = readIn.readLine()) != null) {
             repeat = false;
             outPut.seek(0);//重置outPut文件指针开始位置
-            //遍历outPut文件，在readIn文件中看是否有重复的字符串
+            //遍历outPut文件，看是否有与从readIn读取的字符串s重复的字符串
             while ((temp = outPut.readLine()) != null) {
                 if (s.equals(temp)) {
                     repeat = true;
